@@ -359,9 +359,9 @@
               </div>
                 <div class="carousel-caption ">
                   <img class="imageslider" src="{% static 'images/customer2.jpeg' %}" alt="" width="100" height="100">
-                  <h5 class="mb-5">{{dest1.name}}</h5>
-                  <p>${{dest1.price}}</p>
-                  <p>{{dest1.desc}}</p>
+                  <h5 class="mb-5">ali</h5>
+                  <p>200</p>
+                  <p>gholi khani</p>
                   <p class="text-warning">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -377,7 +377,7 @@
                 <div class="carousel-caption ">
                   <img class="imageslider" src="{% static 'images/customer3.jpeg' %}" alt="" width="100" height="100">
                   <h5 class="mb-5">نگین  کریمی</h5>
-                  <p>${{price}}</p>
+                  <p>$20000</p>
                   <p class="text-warning">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -489,6 +489,9 @@
             <p>{{dest.desc}}</p>
             <p>{{dest.price}}</p>
             <img src="{{baseUrl}}/{{dest.img}}" width="50px" />
+            {% if dest.offer %}
+            <p class="text-danger">this is special offer </p>
+            {% endif %}
 
 
           </div>
