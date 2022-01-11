@@ -21,6 +21,7 @@ from django.conf import settings
 urlpatterns = [
     path('',include('calc.urls')),
     path('travelo/',include('travelo.urls')),
+    path('account/',include('account.urls')),
     path('admin/', admin.site.urls)
 ]
 urlpatterns = urlpatterns +  static(settings.MEDIA_URL , document_root= settings.MEDIA_ROOT)
